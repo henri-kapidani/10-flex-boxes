@@ -1,0 +1,37 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.box-container {
+	background-color: aqua;
+	/* width: 400px; */
+	/* height: 400px; */
+	display: flex;
+	/* justify-content: space-between;
+	align-items: flex-start; */
+}
+
+.box { /* e' sia flex item che flex container */
+	/* padding: 50px; */
+	width: 200px;
+	height: 200px;
+	/* display: flex;
+	justify-content: center;
+	align-items: center; */
+
+	flex: 0 0 200px;
+	/* flex-basis: 200px;
+	flex-shrink: 1;
+	flex-grow: 0; */
+}
+
+.box:nth-child(odd) {
+	background-color: salmon;
+}
+
+.box:nth-child(even) {
+	background-color: gold;
+	/* height: 100px; */
+}
